@@ -1,0 +1,20 @@
+<section id="educacion">
+    <div class="education-container">
+        <h2>EDUCATION</h2>
+        <ul>
+            <li *ngFor="let study of studies">
+                <div class="study-info">
+                    <fa-icon [icon]="study.icon"></fa-icon>
+                    <h3>{{study.title}}</h3>
+                    <p>{{study.school}} ({{study.year}})</p>
+                    <p>Languages:
+                        <span *ngFor="let language of prepareLanguages(study.languages)" class="language-icon">
+                            <fa-icon [icon]="language.icon"></fa-icon>
+                        </span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</section>

@@ -1,0 +1,77 @@
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgba(30, 35, 38, 1)),
+        url('../../../assets/images/pexels-daniel-putzer-633409.jpg');
+    /* Ajusta la ruta de la imagen de fondo */
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centra verticalmente */
+    flex-direction: column;
+    /* Alinea el contenido en el centro */
+}
+
+.inicio .contenido-banner {
+    padding: 20px;
+    background-color: #1e2326;
+    text-align: center;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio .contenido-banner .contenedor-img img {
+    margin-top: 40px;
+    border: 3px solid #1CB698;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.inicio .contenido-banner h2 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    /* Alinea el contenido en el centro */
+}
+
+.inicio .contenido-banner .redes a {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #1CB698;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.inicio .contenido-banner .redes a:hover {
+    background-color: #1CB698;
+}
+
+@media screen and (max-width:980px) {
+    .inicio {
+        margin-top: 76px;
+    }
+}

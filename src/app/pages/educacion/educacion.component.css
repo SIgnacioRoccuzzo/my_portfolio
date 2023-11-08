@@ -1,0 +1,70 @@
+#educacion {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 200px 20px;
+    text-align: center;
+
+}
+
+#educacion .education-container {
+    max-width: 50%;
+    margin: auto;
+}
+
+#educacion h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    padding: 30px 0;
+}
+
+#educacion ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+#educacion .study-info {
+    background-color: #252A2E;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#educacion .study-info h3 {
+    font-size: 24px;
+    font-family: 'Righteous';
+    margin-bottom: 10px;
+
+}
+
+#educacion .study-info p {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 5px 0;
+}
+
+#educacion .language-icon {
+    margin-right: 10px;
+}
+
+#educacion .study-info fa-icon {
+    font-size: 24px;
+    color: #1CB698;
+}
+
+#educacion .study-info fa-icon:hover {
+    color: #FFD700;
+}
+
+
+@media screen and (max-width: 768px) {
+    #educacion .education-container {
+        max-width: 100%;
+
+    }
+
+    #educacion h2 {
+        font-size: 35px;
+        padding: 20px 0;
+    }
+}

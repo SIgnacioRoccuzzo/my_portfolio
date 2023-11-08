@@ -1,0 +1,36 @@
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACT</h2>
+        <div class="fila">
+            <div class="col">
+                <form action="https://formsubmit.co/sebarocu@hotmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="text" name="phone" placeholder="Phone" required>
+                    <input type="email" name="email" placeholder="E-mail Address" required>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" cols="30" rows="10" placeholder="Write your message here"
+                        required></textarea>
+                    <button id="enviar-mensaje" type="submit" value="Send Email">
+                        Enviar Mensaje
+                        <fa-icon [icon]="faPaperPlane"></fa-icon>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+            </div>
+            <div class="col">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <fa-icon [icon]="faMobileScreen"></fa-icon>
+                            (34) 663 83 93 53
+                        </li>
+                        <li>
+                            <fa-icon [icon]="faEnvelope"></fa-icon>
+                            sebarocu@hotmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+<div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a [routerLink]="['inicio']" (click)="scrollTo('inicio')">Sebastian Roccuzzo</a>
+        </div>
+        <div class="nav-responsive" (click)="toggleWebMenu()">☰</div>
+
+        <nav [ngClass]="{'responsive': menuVisible, 'web-menu': !menuVisible}">
+            <ul class="menu-list" [ngClass]="{'responsive': menuVisible}">
+                <li *ngFor="let section of menuSections" [routerLink]="[section.route]"
+                    (click)="scrollTo(section.route); toggleWebMenu()">{{ section.label }}</li>
+            </ul>
+
+        </nav>
+    </header>
+</div>

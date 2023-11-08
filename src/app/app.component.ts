@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-portfolio';
+  title = 'Sebastian Roccuzzo';
+  faInstagram = faInstagram;
+  faLinkedin = faLinkedin;
+  faGithub = faGithub;
+  faArrowUp = faArrowUp
+
+
 }

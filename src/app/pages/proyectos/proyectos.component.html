@@ -9,7 +9,12 @@
                 <div class="proyecto-informacion">
                     <h3>{{ proyecto.nombre }}</h3>
                     <p>{{ proyecto.descripcion }}</p>
-                    <a [href]="proyecto.url" target="_blank">View Project</a>
+                    <div class="project-links">
+                        <a href="https://github.com/SIgnacioRoccuzzo?tab=repositories"><fa-icon
+                                [icon]="icon"></fa-icon></a>
+                        <a [href]="proyecto.url" target="_blank">View Project</a>
+                    </div>
+
                 </div>
             </div>
         </div>

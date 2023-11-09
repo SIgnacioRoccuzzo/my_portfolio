@@ -17,7 +17,6 @@
     font-size: 48px;
     font-family: 'Righteous';
     padding: 30px 0;
-
 }
 
 .portfolio .proyecto {
@@ -29,9 +28,8 @@
     background-color: #252A2E;
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 20px;
-    cursor: pointer;
     margin: 10px;
+
 }
 
 .portfolio .proyecto .proyecto-imagen img {
@@ -64,9 +62,18 @@
     color: #1CB698;
     text-decoration: none;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     display: block;
-    margin-top: 10px;
+    transition: color 0.3s;
+    /* Agrega una transición suave para el cambio de color */
+}
+
+.portfolio .proyecto .proyecto-informacion a fa-icon {
+    font-size: 30px;
+}
+
+.portfolio .proyecto .proyecto-informacion a:hover {
+    color: #FFFFFF;
 }
 
 
@@ -85,10 +92,9 @@
     }
 
     .portfolio .proyecto {
-        width: calc(33.33% - 10px);
+        width: calc(50% - 10px);
         margin: 5px;
     }
-
 }
 
 @media (max-width: 576px) {
@@ -104,6 +110,4 @@
         width: 80%;
         margin: 10px;
     }
-
-
 }

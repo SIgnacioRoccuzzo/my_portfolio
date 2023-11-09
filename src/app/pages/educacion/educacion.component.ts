@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faPython, faJs, faHtml5, faCss3, faNodeJs, faGithub, faAngular, faLinux, faGoogle, faReact } from '@fortawesome/free-brands-svg-icons';
-import { Title } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-educacion',

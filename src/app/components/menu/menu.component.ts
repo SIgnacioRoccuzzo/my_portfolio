@@ -12,8 +12,8 @@ export class MenuComponent {
     { label: 'Home', route: 'inicio' },
     { label: 'About me', route: 'sobremi' },
     { label: 'Skills', route: 'skills' },
-    { label: 'Education', route: 'educacion' },
     { label: 'Projects', route: 'proyectos' },
+    { label: 'Education', route: 'educacion' },
     { label: 'Contact', route: 'contacto' }
   ];
   menuVisible: boolean = false;

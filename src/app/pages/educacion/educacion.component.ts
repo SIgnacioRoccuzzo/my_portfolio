@@ -28,18 +28,6 @@ export class EducacionComponent {
       ],
       icon: faCode
     },
-    {
-      title: 'Google IT Automation with Python',
-      school: 'Google',
-      year: 2023,
-      languages: [
-        { name: 'Python', icon: faPython },
-        { name: 'Linux', icon: faLinux },
-        { name: 'Github', icon: faGithub }
-      ],
-      icon: faGoogle
-
-    }
 
   ];
 

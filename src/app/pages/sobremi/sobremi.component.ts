@@ -24,7 +24,7 @@ export class SobremiComponent {
     { icon: faTree, name: 'NATURE' }
   ];
 
-  cvDownloadLink = '../../../assets/pdf/cv Sebastian Roccuzzo.pdf';
+  cvDownloadLink = '../../../assets/pdf/Cv Sebastian.pdf';
 
 }
 

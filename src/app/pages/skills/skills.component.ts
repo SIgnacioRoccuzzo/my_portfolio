@@ -18,8 +18,8 @@ export class SkillsComponent implements AfterViewInit {
     { name: 'Angular', imageSrc: '../../../assets/images/angular-icon-logo.png' },
     { name: 'React', imageSrc: '../../../assets/images/React.png' },
     { name: 'NodeJs', imageSrc: '../../../assets/images/nodeJs.png' },
+    { name: 'TypeScript', imageSrc: '../../../assets/images/type.png' },
     { name: 'MongoDb', imageSrc: '../../../assets/images/mongoDb.png' },
-    { name: 'Python', imageSrc: '../../../assets/images/python.png' },
     { name: 'MySQL', imageSrc: '../../../assets/images/mysql-logo-png-transparent.png' },
 
   ];

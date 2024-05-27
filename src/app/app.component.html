@@ -7,9 +7,12 @@
   <app-educacion></app-educacion>
   <app-contacto></app-contacto>
 </main>
-
+<aside class="subir">
+  <button (click)="scrollToTop()" class="btn subir-btn text-center" aria-label="Subir">
+    Subir
+  </button>
+</aside>
 <footer>
-  <a href="#inicio" fragment="top" class="arriba"><fa-icon [icon]="faArrowUp"></fa-icon></a>
   <div class="redes">
     <a href="https://instagram.com/sebastian_roccuzzo?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
       class="btn btn-link"><fa-icon [icon]="faInstagram"></fa-icon></a>

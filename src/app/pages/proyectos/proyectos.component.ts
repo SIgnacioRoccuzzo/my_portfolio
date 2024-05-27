@@ -14,6 +14,14 @@ export class ProyectosComponent {
   icon = faGithub
   proyectos: Proyecto[] = [
     {
+      nombre: 'Épica Network',
+      imagen: '../../../assets/images/Captura de pantalla 2024-05-27 a las 23.31.32.png',
+      descripcion: 'Developed an intuitive and modern website for a new entrant in the Mobile Telephony, Fiber Optics, and TV market, optimizing user experience and highlighting their innovative market proposition.',
+      url: 'http://epicanetwork.es',
+      icon: 'faGithub',
+
+    },
+    {
       nombre: 'Crm Employees',
       imagen: '../../../assets/images/timeHub.png',
       descripcion: 'TimeHub is a robust application that streamlines time management for work hours in a company, offering essential tools for both administrators and employees.     User: seba@timeHub.com Password: timeHub2023',
@@ -27,14 +35,6 @@ export class ProyectosComponent {
       descripcion: 'A burger joint website featuring an enticing menu and an intuitive user experience.',
       url: 'https://hamburgueseria-rover.web.app',
       icon: 'faGithub'
-    },
-    {
-      nombre: 'Personal Portfolio',
-      imagen: '../../../assets/images/portfolio.png',
-      descripcion: 'My personal website: Where I share my creativity and my work.',
-      url: 'https://sebastian-roccuzzo.web.app',
-      icon: 'faGithub',
-
     },
     {
       nombre: 'To-DO List',

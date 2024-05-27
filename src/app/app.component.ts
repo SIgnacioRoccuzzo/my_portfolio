@@ -15,5 +15,7 @@ export class AppComponent {
   faGithub = faGithub;
   faArrowUp = faArrowUp
 
-
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

@@ -1,3 +1,4 @@
+/* styles.css */
 .skills {
     background-color: #252A2E;
     color: #fff;
@@ -33,7 +34,6 @@
     font-family: 'Righteous';
     margin: 0 auto;
     margin-bottom: 20px;
-
 }
 
 .skills .images-row {
@@ -71,7 +71,6 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
 }
 
 .skills .skill-icon img {
@@ -85,7 +84,6 @@
 .skills .skill-icon:hover {
     transform: scale(1.1);
     overflow: visible;
-
 }
 
 .skills .skill-icon span {
@@ -138,11 +136,11 @@
 @media screen and (max-width: 410px) {
     .skills {
         padding: 50px;
+
     }
 
     .skills h2 {
         font-size: 30px;
-
     }
 
     .skills .skills-col h3 {

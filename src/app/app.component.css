@@ -1,3 +1,30 @@
+.subir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #252A2E;
+}
+
+.subir-btn {
+    font-family: var(--fuente-cuerpo);
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #787f85;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.subir-btn:hover {
+    background-color: #1CB698;
+    color: var(--accent);
+}
+
 footer {
     background-color: #252A2E;
     color: #fff;

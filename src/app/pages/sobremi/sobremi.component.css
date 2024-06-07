@@ -1,7 +1,9 @@
+@import url('../../../styles.css');
+
 .sobremi {
-    background-color: #1e2326;
-    color: #fff;
+    background-color: var(--background);
     padding: 100px 20px;
+
 
 }
 
@@ -15,6 +17,7 @@
     font-family: 'Righteous';
     text-align: center;
     padding: 60px 0;
+    color: var(--text);
 
 }
 
@@ -22,10 +25,11 @@
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
+    color: var(--text);
 }
 
 .sobremi .contenido-seccion p span {
-    color: #1CB698;
+    color: var(--text);
     font-weight: bold;
 }
 
@@ -41,6 +45,7 @@
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
+    color: var(--text);
 }
 
 .sobremi .fila .col ul {
@@ -49,16 +54,17 @@
 
 .sobremi .fila .col ul li {
     margin: 12px 0;
+    color: var(--text);
 }
 
 .sobremi .fila .col ul li strong {
     display: inline-block;
-    color: #1CB698;
+    color: var(--primary);
     width: 130px;
 }
 
 .sobremi .fila .col ul li span {
-    background-color: #1CB698;
+    background-color: var(--accent);
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -72,18 +78,19 @@
 .sobremi .fila .col .contenedor-intereses .interes {
     width: 100px;
     height: 100px;
-    background-color: #252A2E;
+    background-color: var(--primary);
     border-radius: 10px;
     margin: 0 15px 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--text);
     justify-content: center;
     transition: .3s;
 }
 
 .sobremi .fila .col .contenedor-intereses .interes:hover {
-    background-color: #1CB698;
+    background-color: var(--accent);
 }
 
 .sobremi .fila .col .contenedor-intereses .interes fa-icon {
@@ -94,13 +101,13 @@
 .sobremi a {
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid var(--accent);
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: var(--text);
     position: relative;
     z-index: 10;
     text-decoration: none;
@@ -113,7 +120,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: var(--accent);
     z-index: -1;
     transition: 1s;
     border-radius: 8.5px;
@@ -121,6 +128,13 @@
 
 .sobremi a:hover .overlay {
     width: 100%;
+    color: var(--background);
+
+}
+
+.sobremi a:hover {
+    color: var(--background);
+
 }
 
 @media screen and (max-width: 700px) {
@@ -209,7 +223,7 @@
     .sobremi .fila .col .contenedor-intereses .interes {
         width: 65px;
         height: 65px;
-        background-color: #1CB698;
+        background-color: var(--accent);
         margin: 6.5px;
         font-size: 13px;
         animation: changeColor 5s infinite alternate;
@@ -217,15 +231,15 @@
 
     @keyframes changeColor {
         0% {
-            background-color: #252A2E;
+            background-color: var(--primary);
         }
 
         50% {
-            background-color: #1CB698;
+            background-color: var(--secondary);
         }
 
         100% {
-            background-color: #252A2E;
+            background-color: var(--primary);
         }
     }
 

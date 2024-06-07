@@ -38,7 +38,7 @@ export class ProyectosComponent {
     },
     {
       nombre: 'To-DO List',
-      imagen: '../../../assets/images/to-do.png',
+      imagen: '../../../assets/images/todoNuevoo.png',
       descripcion: 'An app that helps you jot down daily tasks with various categories based on the urgency chosen by the user: daily, monthly, or urgent.',
       url: 'https://to-do-340f2.web.app',
       icon: 'faGithub'

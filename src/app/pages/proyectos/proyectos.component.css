@@ -1,8 +1,10 @@
+@import url('../../../styles.css');
+
 .portfolio {
-    background-color: #1e2326;
-    color: #fff;
+    background-color: var(--background);
     padding: 45px;
     text-align: center;
+
 }
 
 .portfolio .proyectos-container {
@@ -15,6 +17,7 @@
 
 .portfolio h2 {
     font-size: 48px;
+    color: var(--text);
     font-family: 'Righteous';
     padding: 30px 0;
 }
@@ -25,7 +28,8 @@
     align-items: center;
     height: auto;
     width: calc(33.33% - 20px);
-    background-color: #252A2E;
+    background-color: var(--background);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -49,17 +53,19 @@
 .portfolio .proyecto .proyecto-informacion h3 {
     font-size: 20px;
     font-family: 'Righteous';
+    color: var(--text);
     margin-bottom: 10px;
 }
 
 .portfolio .proyecto .proyecto-informacion p {
     font-size: 15px;
     line-height: 18px;
+    color: var(--text);
     margin: 5px 0;
 }
 
 .portfolio .proyecto .proyecto-informacion a {
-    color: #1CB698;
+    color: var(--text);
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
@@ -73,7 +79,7 @@
 }
 
 .portfolio .proyecto .proyecto-informacion a:hover {
-    color: #FFFFFF;
+    color: var(--primary);
 }
 
 

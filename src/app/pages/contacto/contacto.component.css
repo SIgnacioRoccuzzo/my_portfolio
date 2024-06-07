@@ -1,7 +1,8 @@
+@import url('../../../styles.css');
+
 .contacto {
-    background-image: url(../../../assets/images/contact_bg.png);
-    background-color: #1e2326;
-    color: #fff;
+    background-color: var(--background);
+
     padding: 85px 0px;
 
 }
@@ -13,8 +14,10 @@
 
 .contacto h2 {
     font-size: 48px;
+    color: var(--text);
     font-family: 'Righteous';
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .contacto .fila {
@@ -34,21 +37,23 @@
     padding: 18px;
     border: none;
     margin-bottom: 20px;
-    background-color: #252A2E;
-    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--background);
+    color: var(--text);
     font-size: 18px;
 }
 
 .contacto button {
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid var(--accent);
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: var(--text);
     position: relative;
     z-index: 10;
     border-radius: 10px;
@@ -60,7 +65,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: var(--accent);
     z-index: -1;
     transition: 1s;
     border-radius: 8.5px;
@@ -69,6 +74,12 @@
 
 .contacto button:hover .overlay {
     width: 100%;
+
+
+}
+
+.contacto button:hover {
+    color: var(--background);
 }
 
 .contacto .col img {
@@ -78,8 +89,11 @@
 .contacto .col .info {
     position: absolute;
     top: 40%;
-    background-color: #252A2E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: var(--background);
     padding: 15px;
+    color: var(--text);
     max-width: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -95,7 +109,7 @@
 }
 
 .contacto .col .info ul li i {
-    color: #1CB698;
+    color: var(--text);
     display: inline-block;
     margin-right: 5px;
 }
@@ -131,6 +145,7 @@
     .contacto button {
         padding: 8px 18px;
         font-size: 14px;
+        margin-top: 40px;
     }
 
     .contacto .col img {

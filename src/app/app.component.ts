@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+
 
 
 @Component({
@@ -13,7 +14,8 @@ export class AppComponent {
   faInstagram = faInstagram;
   faLinkedin = faLinkedin;
   faGithub = faGithub;
-  faArrowUp = faArrowUp
+  isSectionVisible: any;
+  constructor(private router: Router) { }
 
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });

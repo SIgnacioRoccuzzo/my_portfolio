@@ -1,10 +1,13 @@
+@import url('../../../styles.css');
+
 .contenedor-header {
-    background: #1e2326;
+    background-color: var(--background);
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .contenedor-header header {
@@ -19,8 +22,12 @@
 .contenedor-header header .logo a {
     font-family: 'Righteous';
     font-size: 36px;
-    color: #1CB698;
+    color: var(--text);
     text-decoration: none;
+}
+
+.contenedor-header header .logo a:hover {
+    color: var(--accent);
 }
 
 .contenedor-header header nav ul {
@@ -31,7 +38,7 @@
 
 .contenedor-header header ul li {
     text-align: none;
-    color: #fff;
+    color: var(--text);
     text-decoration: none;
     transition: color 0.5s;
     margin: 0 15px;
@@ -39,34 +46,38 @@
 }
 
 .contenedor-header header ul li:hover {
-    color: #1CB698;
+    color: var(--accent);
+}
+
+.contenedor-header header ul li.active {
+    color: var(--accent);
+    font-weight: bold;
 }
 
 /* Estilos para el menú en versión responsive (si es necesario) */
 .nav-responsive {
-    background-color: #1CB698;
+    background-color: var(--accent);
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
-
 }
-
-
 
 @media screen and (max-width: 980px) {
     .web-menu {
         display: none;
     }
 
+
     .contenedor-header header nav.responsive {
         display: block;
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #252A2E;
-        width: 180px;
+        padding: 20px;
+        background-color: var(--accent);
+        width: 100%;
     }
 
     .contenedor-header header nav.responsive ul {
@@ -76,22 +87,36 @@
     }
 
     .contenedor-header header nav.responsive ul li {
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid var(--text);
         padding: 10px 0;
         cursor: pointer;
     }
 
     .nav-responsive {
         display: block;
+    }
 
+    .contenedor-header header ul li:hover {
+        color: var(--background);
+    }
+
+    .contenedor-header header ul li.active {
+        color: var(--background);
+        font-weight: bold;
     }
 }
 
 @media screen and (max-width: 780px) {
+    .contenedor-header header ul li:hover {
+        color: var(--background);
+    }
+
+    .contenedor-header header ul li.active {
+        color: var(--background);
+        font-weight: bold;
+    }
 
     .contenedor-header header .logo a {
-
         font-size: 34px;
-
     }
 }

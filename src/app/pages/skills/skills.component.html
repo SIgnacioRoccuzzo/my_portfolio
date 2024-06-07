@@ -3,25 +3,26 @@
         <h2>SKILLS</h2>
         <div class="skills-row">
             <!-- Technical Skills -->
-            <div class="skills-col">
+            <div class="skills-col technical-skills">
                 <h3>Technical Skills</h3>
-                <div class="images-row">
+                <div class="skills-grid">
                     <div class="skill-item" *ngFor="let skill of technicalSkills">
                         <div class="skill-icon">
                             <img [src]="skill.imageSrc" alt="{{ skill.name }}">
                         </div>
+                        <span class="skill-name">{{ skill.name }}</span>
                     </div>
                 </div>
             </div>
             <!-- Professional Skills -->
-            <div class="skills-col">
+            <div class="skills-col professional-skills">
                 <h3>Professional Skills</h3>
-                <div class="words-row">
+                <div class="skills-grid">
                     <div class="skill-item" *ngFor="let skill of professionalSkills">
                         <div class="skill-icon">
-                            <span>{{ skill.name }}</span>
-                            <span class="emoji" [ngStyle]="{'font-size': '24px'}">{{ skill.emojis }}</span>
+                            <span class="emoji">{{ skill.emojis }}</span>
                         </div>
+                        <span class="skill-name">{{ skill.name }}</span>
                     </div>
                 </div>
             </div>
